@@ -1,0 +1,22 @@
+.nav__menu-items {
+  display: flex;
+  column-gap: 2rem;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  .new {
+    position: relative;
+    &::after {
+      content: 'NEW';
+      position: absolute;
+      top: -75%;
+      background-color: black;
+      color: white;
+      font-size: .5rem;
+      border-radius: 1rem;
+      padding: .4rem .25rem .25rem;
+      margin-left: 0.25rem;
+    }
+  }
+}

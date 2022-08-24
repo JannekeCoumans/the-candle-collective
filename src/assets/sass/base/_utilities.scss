@@ -1,0 +1,82 @@
+.hotpink {
+  color: $hotpink;
+}
+.pink {
+  color: $pink;
+}
+.lightpink {
+  color: $lightpink;
+}
+.yellow {
+  color: $yellow;
+}
+.lightgreen {
+  color: $lightgreen;
+}
+.green {
+  color: $green;
+}
+.darkgreen {
+  color: $darkgreen;
+}
+
+span.background {
+  padding: 0 .5rem; 
+  
+  &__hotpink{
+    background-color: $hotpink;
+  }
+  &__pink{
+    background-color: $pink;
+  }
+  &__lightpink{
+    background-color: $lightpink;
+  }
+  &__yellow{
+    background-color: $yellow;
+  }
+  &__lightgreen{
+    background-color: $lightgreen;
+  }
+  &__green{
+    background-color: $green;
+  }
+  &__darkgreen{
+    background-color: $darkgreen;
+  }
+}
+
+span.underline {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + .5rem);
+    height: 40%;
+    bottom: 0;
+    left: -.25rem;
+    z-index:-1;
+  }
+
+  &__hotpink::after{
+    background-color: $hotpink;
+  }
+  &__pink::after{
+    background-color: $pink;
+  }
+  &__lightpink::after{
+    background-color: $lightpink;
+  }
+  &__yellow::after{
+    background-color: $yellow;
+  }
+  &__lightgreen::after{
+    background-color: $lightgreen;
+  }
+  &__green::after{
+    background-color: $green;
+  }
+  &__darkgreen::after{
+    background-color: $darkgreen;
+  }
+}

@@ -1,0 +1,50 @@
+.byocBreakdown {
+  background-image: url("../../assets/img/byocBreakdown-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 7rem;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 3rem;
+
+    h1 {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    max-width: 340px;
+    margin-bottom: 2rem;
+
+    p {
+      font-size: .85rem;
+      padding-top: .5rem;
+    }
+
+    .line {
+      position: absolute;
+      top: 50%;
+      right: calc(-200px - 1rem);
+      width: 200px;
+      height: 3px;
+      background-color: $black;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -9px;
+        right: 0;
+        width: 18px;
+        height: 18px;
+        background-color: $black;
+        border-radius: 50%;
+      }
+    }
+
+    &:nth-child(1) {
+      border: 1px solid red;
+    }
+  }
+}

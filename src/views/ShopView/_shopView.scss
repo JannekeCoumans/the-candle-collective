@@ -1,0 +1,17 @@
+.shopView {
+  padding: 10rem 6rem 5rem 6rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 2rem;
+    gap: 2rem;
+    padding-top: 4rem;
+  }
+}

@@ -1,0 +1,90 @@
+.cart-drawer-product {
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 1rem;
+  border-top: 1px solid white;
+  padding: 2rem 0;
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 0.5rem;
+
+    &--info {
+      h2 {
+        color: $black;
+        font-size: 1rem;
+      }
+
+      p {
+        color: rgba($black, 0.7);
+        font-size: 0.75rem;
+        padding-top: 0.5rem;
+      }
+    }
+
+    &--price {
+      color: $hotpink;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    &--amount {
+      display: flex;
+      gap: 1rem;
+
+      .amount-changer {
+        display: flex;
+        border-radius: 1rem;
+        overflow: hidden;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(255, 255, 255, 0.7);
+          color: $black;
+          padding: 0.25rem;
+
+          .material-icons {
+            font-size: 1rem;
+          }
+
+          &.remove {
+            padding-left: 0.35rem;
+          }
+
+          &.add {
+            padding-right: 0.35rem;
+          }
+        }
+
+        .current-amount {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(255, 255, 255, 0.7);
+          color: $black;
+          font-size: 0.75rem;
+          font-weight: 600;
+          width: 1.5rem;
+          height: 100%;
+          user-select: none;
+        }
+      }
+
+      .remove-all {
+        color: $hotpink;
+        font-size: 0.7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

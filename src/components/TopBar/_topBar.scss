@@ -1,0 +1,17 @@
+.topBar {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  z-index: +1;
+  background-color: $hotpink;
+  color: white;
+  letter-spacing: 0.01em;
+
+  h3 {
+   font-size: 14px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

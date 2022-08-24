@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  font-family: $bodyFont;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $pink;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+
+  
+
+  svg {
+    padding-left: 1rem;
+  }
+
+  &__hotpink {
+    background-color: $hotpink;
+    color: white;
+  }
+
+  &__darkgreen {
+    background-color: $darkgreen;
+
+    &:hover {
+      background-color: darken($darkgreen, 10%);
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.075);
+  }
+}
+
+h1 span.underline {
+  position: relative;
+  z-index: +1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5rem);
+    height: 40%;
+    bottom: 0;
+    left: -0.25rem;
+    z-index: -1;
+  }
+
+  &__hotpink::after {
+    background-color: $hotpink;
+  }
+  &__pink::after {
+    background-color: $pink;
+  }
+  &__lightpink::after {
+    background-color: $lightpink;
+  }
+  &__yellow::after {
+    background-color: $yellow;
+  }
+  &__lightgreen::after {
+    background-color: $lightgreen;
+  }
+  &__green::after {
+    background-color: $green;
+  }
+  &__darkgreen::after {
+    background-color: $darkgreen;
+  }
+  &__white::after {
+    background-color: white;
+  }
+}
